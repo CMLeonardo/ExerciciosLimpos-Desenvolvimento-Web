@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <!-- Exemplo com Meta dados e refresh de página Web -->
+    
+    <head>
+        <title>Unidade 02 - Elemento Head</title>
+        <meta charset="utf-8">
+
+        <meta name="author" content="Cesar Morales Leonardo">
+        <meta name="generator"  content="VSCOde">
+        <meta name="Keywords"   content="Meta dados, HTML5, CSS, JavaScript">
+        <meta name="description"    content="Exemplo de meta dados">
+
+        <meta http-equiv="refresh" content="5">
+        
+        <style>
+            body {
+                background: rgba(107, 99, 223, 0.514);
+                font-family:Arial, Helvetica, sans-serif ;
+                color: rgb(0, 0, 0);
+            }
+        </style>
+
+        <script>
+            function sorteioNumero () {
+                resultado.innerHTML = Math.random() * 50;
+            }
+            window.onload = sorteioNumero;
+        </script>
+
+    </head>
+    <body>
+       <p id="resultado"></p> 
+    </body>
+</html>
