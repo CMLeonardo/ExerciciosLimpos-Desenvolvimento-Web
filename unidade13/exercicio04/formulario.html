@@ -1,4 +1,5 @@
 <!doctype html>
+    <!-- Adicionando um placeholder e autofocus-->
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -12,8 +13,9 @@
         <h2>Formulário</h2>
         <form action="destino.html" method="post">
             <label for="nome">Nome completo</label>
-            <input type="text" name="nome" id="nome" size="30" maxlength="100">
-            
+            <input type="text" name="nome" id="nome" size="30" maxlength="100" required autofocus placeholder=" Insira o Nome Completo">
+            <!-- Placeholder coloca o nome dentro do campo e autofocus já facilita, colocando o cursor no campo selecionado-->
+
             <label for="telefone">Telefone</label>
             <input type="tel" name="telefone" id="telefone" size="30" maxlength="30"> 
             

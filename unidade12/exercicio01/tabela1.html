@@ -1,13 +1,36 @@
 <!doctype html>
 <html lang="pt_BR">
- 
+        <!-- Tabelas Nao devem ser usadas para layout -->
     <head>
         <meta charset="utf-8">
         <title>Cursos HTML5 Essencial</title>
+
+        <style> 
+            table {
+                width: 300px;
+                border-width: 1px;
+                border-style: solid;
+            }
+            td, th {
+                border-style: solid;
+                border-width: 1px;
+                padding: 10px;
+                background: #ddd;
+            }
+        </style>
     </head>
     
     <body>
-
+        <table>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>Argentina</th> <!-- th serve para destacar -->
+                <td>2</td>
+            </tr>
+        </table>
 	</body>
     
 </html>

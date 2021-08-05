@@ -1,5 +1,5 @@
 # ExerciciosLimpos-HTML-CSS-Java Script
-Aqui estão alguns exercícios do curso de HTML5, CSS3 e Java Script (incompletos).\
+Aqui estão alguns exercícios sobre HTML5 do curso de desenvolvimento Web (Completos) .\
 Início de um projeto, quem sabe mais pra frente o meu site nao venha. :sweat_smile:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

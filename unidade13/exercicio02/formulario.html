@@ -1,4 +1,5 @@
 <!doctype html>
+    <!-- Criando um formulário simples -->
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -10,7 +11,24 @@
     <body>
         
         <h2>Formulário</h2>
-        
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="POST">
+            <!-- POST nao aparece na URL do navegador, alem de não ter limite de caracteres o outro mmethod é GET-->
+            
+            <label for="nome">Insira seu nome completo</label>
+            <input type="text" name="nome" id="nome" size="50" maxlength="100" required>
+            <!-- Maxlenght limita um valor maximo de caracteres, por mais que seu campo tenha tamanho de 50, vc pode escrever muito mais--> 
+
+            <label for="prontuario">Insira seu prontuario</label>
+            <input type="tel" name="prontuario" id="prontuario" size="50" maxlength="80">
+
+            <label for="email">Insira seu email</label>
+            <input type="email" name="email" id="email" size="50" maxlength="100">
+
+            <label for="website">Insira seu website</label>
+            <input type="url" name="website" id="website" size="50" maxlength="100">
+
+            <input type="submit" value="Enviar" id="enviar" name="enviar" >
+        </form>
     
     </body>
 </html>

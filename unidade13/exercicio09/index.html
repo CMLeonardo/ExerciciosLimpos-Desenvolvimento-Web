@@ -1,13 +1,23 @@
 <!doctype html>
+    <!-- Adicionar um Type Range + JavaScript para mostrar Resultado-->
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Curso HTML5 Essencial</title>
+
+        <script>
+            function mostrarResultado() {
+                document.getElementById("resultado").innerHTML = document.getElementById("carros").value;
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="mostrarResultado()">
         <form action="index.html" method="post">
-            
+            <input type="range" id="carros" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <span id="resultado">
+
+            </span>
         </form>
     </body>
 </html>
