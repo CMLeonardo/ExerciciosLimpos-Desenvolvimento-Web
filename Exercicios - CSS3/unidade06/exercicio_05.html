@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Aplicando na pratica o elemento clear -->
     <head>
         <meta charset="utf-8">
         <title>Curso de CSS</title>
@@ -30,19 +31,23 @@
                 height:50px;
                 padding:25px;
                 font-size:12px;
-                float:left;
             }
 
             .janela1 {
-                background-color:rgb(0,153,204);	
+                background-color:rgb(0,153,204);
+                float: right;
+                height: 300px;	
             }
 
             .janela2 {
-                background-color:rgb(255,204,51);
+                background-color:rgba(255,204,51,0.8); /* rgba é de rgb alpha, vc consegue mudar a opacidade da cor */
+                float: left;
+                height: 250px;
             }
 
             .janela3 {
                 background-color:rgb(153,204,51);
+                clear: both; /* Aqui estou dizendo que nao queroi nenhum elemento a direita e em cima dessa minha div */
             }
 
             .janela4 {

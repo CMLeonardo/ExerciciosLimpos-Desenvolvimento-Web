@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Conceitos de CSS -->
     <head>
         <meta charset="utf-8">
         <title>Curso de CSS</title>
@@ -9,13 +10,25 @@
             }
 
             #principal {
-                width:600px;
+                width:750px;
                 margin:0 auto;
-                background-color:#9C3;
+                background-color: black;
+                padding: 10px;
             }
 
-            #janela {
-                width:300px;
+            /*Arrumando o CSS da div principal*/
+            #principal:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .janela {
+                float: left;
+                width:350px;
+                background: aquamarine;
+                padding: 10px;
+                margin-right: 5px;
             }
 
             p {
@@ -27,9 +40,17 @@
 <body>
 	
     <div id="principal">
-    	<div id="janela">
+    	<div class="janela">
 	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
         </div>
+
+        <!-- podemos ter varios elementos com a tag class, mas nao podemos ter elementos com o mesmo id -->
+
+        <div class="janela">
+	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
+        </div>
+        
+        <!-- <br style="clear: both;"> um jeito de de arrumar a nossa div principal, porem nao é o mais bonito -->
     </div>
 
 </body>
