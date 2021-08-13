@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Aplicando CSS em elementos de lista especificos -->
     <head>
         <meta charset="utf-8">
         <title>Curso de CSS</title>
@@ -8,6 +9,23 @@
                 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
                 font-size:14px;
             }
+
+            li:first-child {
+                color: blueviolet;
+            }
+
+            li:last-child {
+                color: cadetblue;
+            }
+            
+            li:nth-child(even) {    /* (even) para elementos pares e (odd) para os ímpares */
+                color: darkblue;
+            }
+
+            li:nth-child(3) {
+                color:coral;
+            }
+
         </style>
     </head>
 

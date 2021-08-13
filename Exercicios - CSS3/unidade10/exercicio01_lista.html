@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Personalizando listas -->
     <head>
         <meta charset="utf-8">
         <title>Curso de CSS</title>
@@ -8,6 +9,21 @@
                 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
                 font-size:14px;
             }
+
+            ul, ol {
+                list-style-image: url(imagens/estrela.png); /* Caso vc crie uma classe de ol com list style, a lista perde a sequencia ordinária */
+                margin: 0;
+                padding: 0;
+            }
+
+            ol {
+                list-style-type: lower-roman;
+            }
+
+            li {
+                background-color: bisque;
+            }
+
         </style>
 
         <body>

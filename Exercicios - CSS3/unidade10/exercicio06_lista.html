@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- como deixar as cores zebradas -->
     <head>
         <meta charset="utf-8">
         <title>Curso de CSS - Menu Vertical</title>
@@ -10,6 +11,17 @@
             }
 
             ul { margin:0;padding:0;list-style:none }
+
+            li {
+                width: 200px;
+                padding: 5px;
+                background: darkcyan;
+                margin-bottom: 5px;
+            }
+
+            li:nth-child(3n) { /* todos os elementos mutiplos 3 vao mudar de cor */
+                background: cyan;
+            }
 
         </style>
     </head>
