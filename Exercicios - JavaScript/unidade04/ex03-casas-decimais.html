@@ -1,8 +1,16 @@
 <html>
+        <!-- Utilizando funcoes matematicas -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            function calcularDiaria () {
+               // return Math.round (2000/30); funcao arredonda o numero decimal */
+               // return Math.floor (2000/30); Arredonda sempre pra baixo  
+               return (2000/30).toFixed(2);
+            }
 
+            var diaria = calcularDiaria();
+            alert(diaria);
         </script>
     </head>
     <body>
