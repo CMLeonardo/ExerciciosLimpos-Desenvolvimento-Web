@@ -1,8 +1,23 @@
 <html>
+        <!-- Usando CharAt -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            var frase = "Cesar Leonardo";
+            var primeira = frase.charAt(1);
+
+            var letra = "";
+            var primeira_palavra = "";
+            var i=0;
+
+            // selecionando a primeira palavra da frase
+            while (letra != " ") {
+                letra = frase.charAt(i);
+                primeira_palavra += letra;
+                i++;
+            }
+
+            console.log(primeira_palavra);
         </script>
     </head>
     <body>

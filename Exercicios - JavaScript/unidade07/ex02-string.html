@@ -1,8 +1,20 @@
 <html>
+        <!-- Usando substr -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var nome = "Curso JavaScript Fundamental";
+            var primeira = "";
+            var i = 0;
+            var letra = "";
+
+            while (letra != " ") {
+                letra = nome.charAt(i);
+                i++;
+            }
             
+            primeira = nome.substr(0,i);
+            console.log(primeira);
         </script>
     </head>
     <body>

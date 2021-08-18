@@ -1,8 +1,16 @@
 <html>
+        <!-- Definindo um Método -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var produto = {nome:"Caneca",preco:0.50,cor:"Preta"};// new Object() = {}
+            
+            function retornarInfo() {
+                return "Meu produto " + this.nome + ", Custa R$" + this.preco;
+            }
+            produto.info = retornarInfo;
 
+            console.log(produto.info());
         </script>
     </head>
     <body>

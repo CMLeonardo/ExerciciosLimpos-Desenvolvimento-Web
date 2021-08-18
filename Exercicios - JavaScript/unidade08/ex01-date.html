@@ -1,9 +1,16 @@
 <html>
+        <!-- aprendendo o objeto date -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago"];
+            var agora = new Date();
 
+            //console.log(agora.getDate() + " / " + meses[agora.getMonth()] + " / " + agora.getFullYear());
+            //console.log(agora.getDate() + " / " + (agora.getMonth() +1) + " / " + agora.getFullYear()); mostrando a data númerica completa
             
+            var aniversario = new Date(2001,0,29);
+            console.log(aniversario.getDay()); //pegamos que dia da semana essa data corresponde
         </script>
     </head>
     <body>

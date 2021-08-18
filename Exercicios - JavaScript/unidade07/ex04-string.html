@@ -1,8 +1,12 @@
 <html>
+        <!-- Usando toLowerCase e toUpperCase -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var nome = "cesar leonardo";
+            var letras_min = nome.toLowerCase();
+            var primeira_letra = letras_min.charAt(0).toUpperCase();
+            console.log(primeira_letra+letras_min.substr(1,letras_min.length));
         </script>
     </head>
     <body>

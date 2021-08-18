@@ -1,9 +1,23 @@
 <html>
     <head>
+        <!-- Incluindo e excluindo conteudos do array -->
         <title>Aulas de Javascript</title>
         <script>
             var salada = ["Uva","Banana","Pera"] ;
+
+            //Adicionar elementos no final do array
+            salada.push("Manga");
+
+            //Adicionar elementos nos Início
+            salada.unshift("Laranja");
+
+            //Excluir o ultimo elemento
+            salada.pop();
+
+            //Excluir o primeiro elemento
+            salada.shift();
             console.log(salada);
+            console.log("Numero de elementos no array: " + salada.length);
         </script>
     </head>
     <body>

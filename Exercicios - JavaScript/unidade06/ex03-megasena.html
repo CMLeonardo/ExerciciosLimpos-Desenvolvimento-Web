@@ -1,8 +1,24 @@
 <html>
+        <!-- Simulador de MegaSena-->
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            function ordenarNumero(a,b) {
+                return a-b;
+            }
+            var sorteio;
+            var mega = new Array();
+            var i=0;
 
+            while(i<6){
+                sorteio = Math.ceil(Math.random()*60);
+                if (mega.indexOf(sorteio) < 0) {
+                    mega.push(sorteio);
+                    i++;
+                }
+            }
+            mega.sort(ordenarNumero);
+            console.log(mega);
         </script>
     </head>
     <body>

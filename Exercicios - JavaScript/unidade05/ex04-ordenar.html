@@ -1,12 +1,30 @@
 <html>
+        <!-- Ordenar os elementos do nosso array -->
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            var salada = new Array();
+            // Para fazer uma ordenacao numerica deve colocar essa function junto ao sort
+            function ordenarNumero (a,b) {
+                return a-b;
+            } 
+            
+            var megasena = new Array();
+            megasena[0] = "43";
+            megasena[1] = "10";
+            megasena[2] = "3";
+            megasena[3] = "20"; 
+            
+            megasena.sort(ordenarNumero);
+            console.log(megasena)
+
+            /*var salada = new Array();
             salada[0] = "Uva";
             salada[1] = "Mamão";
             salada[2] = "Pêra";
-            salada[3] = "Maçã";        
+            salada[3] = "Maçã";    
+            salada.push("Abacate")
+            salada.sort(); // Coloca em ordem alfabética
+            console.log(salada); */
         </script>
     </head>
     <body>
