@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Como inserir arquivo -->
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
@@ -12,8 +13,9 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$( function(e) {
-
-			} )
+                $("<li><img src='imagem/foto4.jpg'></li>").insertAfter("li:last-child"); // inseriu uma imagem dps do ultimo elemento
+                $("<li><img src='imagem/foto4.jpg'></li>").insertBefore("li:nth(1)"); // inseriu uma imagem dps do ultimo elemento
+            } )
 		
 		</script>
         

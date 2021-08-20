@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Selecionar elementos do DOM -->
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title> 
@@ -13,12 +14,16 @@
             <a href="#">Chile</a>
         </nav>
         
+        <a href="#">Paraguai</a>
+
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
         	$( function() {
-				
+				$("nav a:contains('Brasil')").css("color", "red").css("display", "block");
 			})
+
+            alert("Essa página contém " + $("a").length + " links");
         </script>   
                 
     </body>

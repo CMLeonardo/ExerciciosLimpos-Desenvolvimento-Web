@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+        <!-- Alterar atributos de um elemento -->
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
@@ -7,8 +8,10 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$( function(e) {
-		
-			} )
+               $("a").attr("title","Alpes Suicos");
+               $("a").attr("target","_blank"); // Abre a foto em outra aba
+               $("a").removeAttr("target"); // Tirou o atributo target
+            } )
 		</script>
         
     </head>
