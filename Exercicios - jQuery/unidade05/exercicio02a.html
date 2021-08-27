@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+            <!-- Diferença entre position e offset -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
@@ -11,8 +12,13 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
-			});
+                console.log("Posição top do elemento: " + $('#janela').position().top);
+                console.log("Posição left do elemento: " + $('#janela').position().left);
+			
+                console.log("Posição top do elemento: " + $('#janelinha').offset().top);
+                console.log("Posição left do elemento: " + $('#janelinha').offset().left);
+                // Com offset a position sai em relação ao origem
+            });
 		</script>        
     </head>
 
