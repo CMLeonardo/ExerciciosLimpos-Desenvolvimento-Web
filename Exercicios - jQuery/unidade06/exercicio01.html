@@ -1,12 +1,39 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+            <!-- Evento de clique -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
+			$(function () {
+                $('#cursohtml').click( function(){
+                    alert("clicou no botão HTML");
+                })
+
+                function mostrarMensagem () {
+                    alert ("Tu é bonita hein minha rainha");
+                    $('#cursocss').off("mouseover", mostrarMensagem); // function correrá apenas uma vez
+                } 
+
+               /* function mostrarMensagem () {
+                    alert ("Tu é bonita hein minha rainha");
+                    $('#cursocss').off(); // aqui o off desliga todos os eventos relacionados ao botão css3
+                } */
+
+                function mostrarMensagem2 () {
+                    alert ("Tu é bonito hein meu rei");
+                }
+
+                $('#cursocss').on("mouseover", mostrarMensagem);
+                $('#cursocss').on("click", mostrarMensagem2);
+
+             /*   $('#cursocss').on("mouseover", function(){
+                    alert("passou por cima do botão CSS");
+                }) */
+            })
+
 		</script>        
     </head>
 

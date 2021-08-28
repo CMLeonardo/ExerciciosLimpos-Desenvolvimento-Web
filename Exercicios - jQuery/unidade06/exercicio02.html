@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+            <!-- mostrar e esconder elementos -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
@@ -9,13 +10,41 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			
+			/* $(function(e){
+                $('#janela').hide();
+
+                $('#mostrar').click(mostrarElemento);
+
+                $('#esconder').click(esconderElemento);
+
+                function mostrarElemento(e) {
+                    $('#janela').show();
+                }
+
+                function esconderElemento(e) {
+                    $('#janela').hide();
+                };
+            }); */ 
+            
+            $(function(e){
+                $('#janela').hide();
+
+                $('#mostrar').hover(mostrarElemento,esconderElemento);
+
+                function mostrarElemento(e) {
+                    $('#janela').show();
+                }
+
+                function esconderElemento(e) {
+                    $('#janela').hide();
+                };
+            });
 		</script>        
     </head>
 
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
-        <input type="button" id="esconder" 	value="Esconder" />
+        <!-- <input type="button" id="esconder" 	value="Esconder" /> -->
         
         <div id="janela"></div>
     </body>
