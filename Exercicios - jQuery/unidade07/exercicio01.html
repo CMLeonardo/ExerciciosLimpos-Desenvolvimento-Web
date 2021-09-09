@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+		<!-- Efeitos básicos de animação -->
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
@@ -16,15 +17,17 @@
 			})
 			
 			function esconderObjeto() {
-			
+				$('#janela').hide(300);
 			}
 
 			function mostrarObjeto() {
-				
+				$('#janela').show(2000, function(e) {
+					alert("finalizou a animação");
+				});
 			}
 
 			function reverterObjeto() {
-			
+				$('#janela').toggle(300); //faz o reverso não importa qual seja o estado
 			}
 		</script>        
     </head>

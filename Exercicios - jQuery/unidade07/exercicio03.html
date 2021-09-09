@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+			<!-- Efeitos slideup, slidedown e slidetoggle -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
@@ -17,13 +18,18 @@
 			})
 			
 			function esconderObjeto() {
-			
+				$('#janela').slideUp(500);
 			}
 
 			function mostrarObjeto() {
-			
+				$('#janela').slideDown(500, function(e) {
+					alert("Finalizou")
+				});
 			}
 
+			function reverterObjeto() {
+				$('#janela').slideToggle(500);
+			}
 		
 		</script>        
     </head>
@@ -31,6 +37,7 @@
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
         <input type="button" id="esconder" 	value="Esconder" />
+		<input type="button" id="reverso" 	value="Reverter" />
         
         
         <div id="janela"></div>

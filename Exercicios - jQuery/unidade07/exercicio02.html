@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+			<!-- efeitos Fadein, fadeout, fadeto e fadetoggle -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
@@ -16,15 +17,15 @@
 			})
 			
 			function esconderObjeto() {
-				
+				$('#janela').fadeOut(500);
 			}
 
 			function mostrarObjeto() {
-				
+				$('#janela').fadeIn(500);
 			}								
 			
 			function reversoObjeto() {
-				
+				$('#janela').fadeToggle(500); // faz o inverso não importa qual seja o estado anterior
 			}											
 
 		</script>        

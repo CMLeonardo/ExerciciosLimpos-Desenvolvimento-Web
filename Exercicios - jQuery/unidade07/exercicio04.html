@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+            <!-- Efeito Animação personalizado -->
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
@@ -9,8 +10,12 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
+            function moverObjeto () {
+                $('#janela').animate( {left:300},1000,"swing" ); // Janela escorrega para o lado direito
+            }
 
+			$( function(e) {			
+                $('#direita').click(moverObjeto);
 			})
 
 		</script>        
