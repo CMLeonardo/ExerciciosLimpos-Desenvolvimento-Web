@@ -1,5 +1,5 @@
 # Exercicios Limpos Desenvolvimento Web
-Aqui estão alguns exercícios sobre HTML5 (Completo), CSS3 (Completo), JavaScript (Completo), jQuery (Completo) e BootStrap (Incompleto) do curso de desenvolvimento Web.\
+Aqui estão alguns exercícios sobre HTML5 (Completo), CSS3 (Completo), JavaScript (Completo), jQuery (Completo) e BootStrap (Completo) do curso de desenvolvimento Web.\
 Início de um projeto, quem sabe mais pra frente o meu site não venha. :sweat_smile:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
