@@ -1,0 +1,1 @@
+INSERT INTO estados(nome, sigla) VALUES ('Cesar', 'CS')
